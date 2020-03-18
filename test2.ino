@@ -21,12 +21,13 @@ digitalWrite(LEDs[index], LOW);
 }
 delay(1000);
 }
-
+for (int a=0; a <7; a++){
 for (index=0; index <= 7; index++){
 for (byte i=0;i<total;i++) {
 digitalWrite(LEDs[i], LOW);}
 digitalWrite(LEDs[index], HIGH);
 delay(1000);}
+}
 
 for (int a=0; a <2; a++){
 for (index=0; index <= 7; index++){
@@ -38,10 +39,11 @@ digitalWrite(LEDs[index], LOW);
 }
 delay(1000);
 }
-
+for (int a=0; a <7; a++){
 for (index=7; index > 0; index--){
 for (byte i=0;i<total;i++) {
 digitalWrite(LEDs[i], LOW);}
 digitalWrite(LEDs[index], HIGH);
 delay(1000);}
+}
 }
